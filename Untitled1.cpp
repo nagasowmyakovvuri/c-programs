@@ -1,20 +1,13 @@
-#include<iostream>
-class Base{
-	
-	public:
-		string name,pho;
-		Base(string n,string p)
-		{
-			name=n;
-			pho=p;
-		}
-		void display()
-		{
-			cout<<name<<" "<<pho<<endl;
-		}
-};
+/* a c program to find the area of the circle*/
+#include <stdio.h>
 int main()
 {
-	Base o1("sow","1234");
-	o1.display();
+int r;
+float pie=3.14,area,perimeter;
+printf("enter the radius of circle");
+scanf("%d",&r);
+area=pie*r*r;
+perimeter=2*pie*r;
+printf("the area and the perimeter of the circle is %f and %f",area,perimeter);	
+return 0;	
 }

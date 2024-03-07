@@ -1,36 +1,13 @@
-#include<iostream>
-using namespace std;
-long long static int i=1;
-class Factorial{
-	public:
-		long long int a,k=1;
-		Factorial(int a)
-		{
-			this->a=a;
-		}
-	    recursion()
-		{
-			if(i>a)
-			{
-				return 1;
-			}
-			else
-			{
-				k=i*k;
-				i++;
-				return recursion();
-			}
-		}
-		void display()
-		{
-			cout<<k;
-		}
-};
+# include<stdio.h>
 int main()
 {
-	long long int a;
-	cin>>a;
-	Factorial o1(a);
-	o1.recursion();
-	o1.display();
+int a,b,factorial=1;
+printf ( "enter b value");
+scanf("%d",&b);
+for(a=1;a<=b;a++)
+{
+factorial *=a;
+}
+printf("%d",factorial);		
+return 0;		
 }
